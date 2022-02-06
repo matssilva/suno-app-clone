@@ -33,7 +33,7 @@ const Card = ({ item }) => {
         ></Icon>
       </View>
       <View style={tw`flex-1 justify-end`}>
-        <View style={tw`flex-row items-center gap-5`}>
+        <View style={tw`flex-row items-center`}>
           <Text style={tw`text-gray text-xs font-semibold`}>Edição #986</Text>
           <View style={tw`bg-red h-1 w-1 rounded-full mx-3`} />
           <Text style={tw`text-gray text-xs font-semibold`}>há 2 dias</Text>

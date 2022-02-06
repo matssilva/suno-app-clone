@@ -2,6 +2,7 @@ import { View, Text } from 'react-native';
 import React from 'react';
 import tw from '../../../tailwind';
 import SunoCallList from '../../components/SunoCallList/SunoCallList';
+import LastReports from '../../components/LastReports/LastReports';
 
 const HomeScreen = () => {
   return (
@@ -10,7 +11,10 @@ const HomeScreen = () => {
         <Text style={tw`text-2xl text-white font-bold`}>Suno Call</Text>
         <Text style={tw`text-base text-red font-semibold`}>ver todos</Text>
       </View>
-      <SunoCallList />
+      <View style={tw`mb-4`}>
+        <SunoCallList />
+      </View>
+      <LastReports />
     </View>
   );
 };
