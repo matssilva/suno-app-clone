@@ -6,7 +6,9 @@ import LogoImage from '../../assets/sunoLogo.svg';
 
 const HeaderHome = ({ headerTitle }) => {
   return (
-    <View style={tw`flex-row bg-black items-center h-20 px-3 pt-4 justify-between`}>
+    <View
+      style={tw`flex-row bg-black items-center h-20 px-3 pt-4 justify-between border border-b-gray-light`}
+    >
       <Icon
         size={30}
         type="material"
