@@ -24,7 +24,7 @@ const SunoCallList = () => {
       scrollEventThrottle={16}
       decelerationRate="fast"
       snapToOffsets={calculateOffsets()}
-      renderItem={({ item }) => <Card item={item} />}
+      renderItem={({ item }) => <Card item={item} type="call-card" />}
     />
   );
 };

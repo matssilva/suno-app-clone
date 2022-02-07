@@ -1,7 +1,8 @@
-import { View, Text } from 'react-native';
+import { View, Text, FlatList } from 'react-native';
 import React, { useState } from 'react';
 import ListOptionsHorizontal from '../../shared/ListOptionsHorizontal';
 import tw from '../../../tailwind';
+import Card from '../../shared/Card';
 
 const options = [
   'Todos',
@@ -11,8 +12,16 @@ const options = [
   'Reserva de Emergência',
 ];
 
+const data = ['red', 'yellow', 'blue', 'purple', 'green'];
+
 const LastReports = () => {
   const [selectedOption, setSelectedOption] = useState(options[0]);
+
+  const renderCards = () => {
+    return data.map((item, index) => {
+      return <Card key={index} item={item} type="report-card" />;
+    });
+  };
 
   return (
     <View>
@@ -22,6 +31,7 @@ const LastReports = () => {
         selectedOption={selectedOption}
         setSelectedOption={setSelectedOption}
       />
+      {renderCards()}
     </View>
   );
 };

@@ -4,7 +4,7 @@ import Option from './Option';
 
 const ListOptionsHorizontal = ({ options, selectedOption, setSelectedOption }) => {
   return (
-    <View>
+    <View style={{ marginBottom: 15 }}>
       <FlatList
         data={options}
         keyExtractor={(item) => item}
